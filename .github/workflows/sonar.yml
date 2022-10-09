@@ -16,14 +16,6 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 6.0.x
-      - uses: actions/cache@v3
-        id: cache-nuget-lucene
-        with:
-          path: |
-            ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nuget-lucene
       - name: Restore dependencies
         run: dotnet restore
       - name: SonarScanner for .NET 6 with pull request decoration support
