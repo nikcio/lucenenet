@@ -29,6 +29,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="..\Lucene.Net.Tests\Properties\AssemblyInfo.cs" Link="Properties\AssemblyInfo.cs" />
     <Compile Include="..\Lucene.Net.Tests\Index\TestIndexWriterReader.cs" Link="Index\TestIndexWriterReader.cs" />
     <Compile Include="..\Lucene.Net.Tests\Search\**\*.cs" LinkBase="Search" />
