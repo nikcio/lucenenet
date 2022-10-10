@@ -35,13 +35,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="3.1.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="SourceCode\TestInputForParser.cs" />
     <None Remove="Configuration\appsettings.json" />
     <EmbeddedResource Include="Configuration\appsettings.json" />
