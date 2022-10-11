@@ -82,7 +82,6 @@
     <SystemRuntimeInteropServicesRuntimeInformationPackageVersion>4.3.0</SystemRuntimeInteropServicesRuntimeInformationPackageVersion>
     <SystemSecurityCryptographyXmlPackageVersion>6.0.1</SystemSecurityCryptographyXmlPackageVersion>
     <SystemTextEncodingCodePagesPackageVersion>6.0.0</SystemTextEncodingCodePagesPackageVersion>
-    <SystemTextEncodingCodePagesPackageVersion Condition=" '$(TargetFramework)' == 'net461' ">5.0.0</SystemTextEncodingCodePagesPackageVersion>
     <TimeZoneConverterPackageVersion>6.0.1</TimeZoneConverterPackageVersion>
   </PropertyGroup>
 </Project>
