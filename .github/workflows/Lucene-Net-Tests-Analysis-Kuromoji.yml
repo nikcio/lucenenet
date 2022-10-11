@@ -21,6 +21,8 @@
 name: 'Lucene.Net.Tests.Analysis.Kuromoji'
 
 on:
+  push:
+    branches: [ "sonarcloud" ]
   workflow_dispatch:
   pull_request:
     paths:
