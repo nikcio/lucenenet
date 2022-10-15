@@ -1,0 +1,267 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure-templates", "azure-templates", "{05CE3A39-40D4-452D-AFE0-E57E536A08C6}"
+	ProjectSection(SolutionItems) = preProject
+		.build\azure-templates\install-dotnet-sdk.yml = .build\azure-templates\install-dotnet-sdk.yml
+		.build\azure-templates\publish-nuget-packages.yml = .build\azure-templates\publish-nuget-packages.yml
+		.build\azure-templates\publish-test-binaries.yml = .build\azure-templates\publish-test-binaries.yml
+		.build\azure-templates\publish-test-results-for-test-projects.yml = .build\azure-templates\publish-test-results-for-test-projects.yml
+		.build\azure-templates\publish-test-results.yml = .build\azure-templates\publish-test-results.yml
+		.build\azure-templates\run-tests-on-os.yml = .build\azure-templates\run-tests-on-os.yml
+		.build\azure-templates\show-all-environment-variables.yml = .build\azure-templates\show-all-environment-variables.yml
+		.build\azure-templates\show-all-files.yml = .build\azure-templates\show-all-files.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{8CA61D33-3590-4024-A304-7B1F75B50653}"
+	ProjectSection(SolutionItems) = preProject
+		src\dotnet\Directory.Build.props = src\dotnet\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{4016BDAB-6C33-4D1E-9439-57B416EA45D5}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		build = build
+		build.bat = build.bat
+		build.ps1 = build.ps1
+		.build\dependencies.props = .build\dependencies.props
+		.build\nuget.props = .build\nuget.props
+		.build\release.targets = .build\release.targets
+		.build\runbuild.ps1 = .build\runbuild.ps1
+		.build\TestReferences.Common.targets = .build\TestReferences.Common.targets
+		TestTargetFramework.props = TestTargetFramework.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "psake", "psake", "{4BFE738F-3D99-4408-85D4-E882737F9CEC}"
+	ProjectSection(SolutionItems) = preProject
+		.build\psake\psake = .build\psake\psake
+		.build\psake\psake-config.ps1 = .build\psake\psake-config.ps1
+		.build\psake\psake.cmd = .build\psake\psake.cmd
+		.build\psake\psake.ps1 = .build\psake\psake.ps1
+		.build\psake\psake.psd1 = .build\psake\psake.psd1
+		.build\psake\psake.psm1 = .build\psake\psake.psm1
+		.build\psake\readme.md = .build\psake\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{DB6B3C48-B1B1-4977-9FB0-333ED71E84E1}"
+	ProjectSection(SolutionItems) = preProject
+		.build\psake\public\Assert.ps1 = .build\psake\public\Assert.ps1
+		.build\psake\public\BuildSetup.ps1 = .build\psake\public\BuildSetup.ps1
+		.build\psake\public\BuildTearDown.ps1 = .build\psake\public\BuildTearDown.ps1
+		.build\psake\public\Exec.ps1 = .build\psake\public\Exec.ps1
+		.build\psake\public\FormatTaskName.ps1 = .build\psake\public\FormatTaskName.ps1
+		.build\psake\public\Framework.ps1 = .build\psake\public\Framework.ps1
+		.build\psake\public\Get-PSakeScriptTasks.ps1 = .build\psake\public\Get-PSakeScriptTasks.ps1
+		.build\psake\public\Include.ps1 = .build\psake\public\Include.ps1
+		.build\psake\public\Invoke-psake.ps1 = .build\psake\public\Invoke-psake.ps1
+		.build\psake\public\Invoke-Task.ps1 = .build\psake\public\Invoke-Task.ps1
+		.build\psake\public\Properties.ps1 = .build\psake\public\Properties.ps1
+		.build\psake\public\Task.ps1 = .build\psake\public\Task.ps1
+		.build\psake\public\TaskSetup.ps1 = .build\psake\public\TaskSetup.ps1
+		.build\psake\public\TaskTearDown.ps1 = .build\psake\public\TaskTearDown.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "private", "private", "{BC910C84-EF7C-4F69-AA76-47C0EC06D809}"
+	ProjectSection(SolutionItems) = preProject
+		.build\psake\private\CleanupEnvironment.ps1 = .build\psake\private\CleanupEnvironment.ps1
+		.build\psake\private\ConfigureBuildEnvironment.ps1 = .build\psake\private\ConfigureBuildEnvironment.ps1
+		.build\psake\private\CreateConfigurationForNewContext.ps1 = .build\psake\private\CreateConfigurationForNewContext.ps1
+		.build\psake\private\ExecuteInBuildFileScope.ps1 = .build\psake\private\ExecuteInBuildFileScope.ps1
+		.build\psake\private\FormatErrorMessage.ps1 = .build\psake\private\FormatErrorMessage.ps1
+		.build\psake\private\Get-DefaultBuildFile.ps1 = .build\psake\private\Get-DefaultBuildFile.ps1
+		.build\psake\private\GetCurrentConfigurationOrDefault.ps1 = .build\psake\private\GetCurrentConfigurationOrDefault.ps1
+		.build\psake\private\GetTasksFromContext.ps1 = .build\psake\private\GetTasksFromContext.ps1
+		.build\psake\private\LoadConfiguration.ps1 = .build\psake\private\LoadConfiguration.ps1
+		.build\psake\private\LoadModules.ps1 = .build\psake\private\LoadModules.ps1
+		.build\psake\private\ResolveError.ps1 = .build\psake\private\ResolveError.ps1
+		.build\psake\private\SelectObjectWithDefault.ps1 = .build\psake\private\SelectObjectWithDefault.ps1
+		.build\psake\private\Test-ModuleVersion.ps1 = .build\psake\private\Test-ModuleVersion.ps1
+		.build\psake\private\WriteColoredOutput.ps1 = .build\psake\private\WriteColoredOutput.ps1
+		.build\psake\private\WriteDocumentation.ps1 = .build\psake\private\WriteDocumentation.ps1
+		.build\psake\private\WriteTaskTimeSummary.ps1 = .build\psake\private\WriteTaskTimeSummary.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{4DF7EACE-2B25-43F6-B558-8520BF20BD76}"
+	ProjectSection(SolutionItems) = preProject
+		src\dotnet\tools\Directory.Build.props = src\dotnet\tools\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4DF0A2A1-B9C7-4EE5-BAF0-BEEF53E34220}"
+	ProjectSection(SolutionItems) = preProject
+		.asf.yaml = .asf.yaml
+		.editorconfig = .editorconfig
+		.rat-excludes = .rat-excludes
+		CHANGES.txt = CHANGES.txt
+		CONTRIBUTING.md = CONTRIBUTING.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE.txt = LICENSE.txt
+		NOTICE.txt = NOTICE.txt
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net", "src\Lucene.Net\Lucene.Net.csproj", "{3A0AA37E-2B7B-4416-B528-DA4E0E6A6706}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Classification", "src\Lucene.Net.Classification\Lucene.Net.Classification.csproj", "{63EC0EDA-81E9-4AEB-A09A-F956A9001743}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Codecs", "src\Lucene.Net.Codecs\Lucene.Net.Codecs.csproj", "{8D6952F1-5BC9-4389-A20A-E7BAE40D5597}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Expressions", "src\Lucene.Net.Expressions\Lucene.Net.Expressions.csproj", "{EA889582-4ABA-4AFA-A125-D7A37B353B10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Facet", "src\Lucene.Net.Facet\Lucene.Net.Facet.csproj", "{BFBAB6D5-AE96-4364-A996-D31B0C55D4A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Grouping", "src\Lucene.Net.Grouping\Lucene.Net.Grouping.csproj", "{FF862392-B2AF-422D-865E-768E969A9412}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Highlighter", "src\Lucene.Net.Highlighter\Lucene.Net.Highlighter.csproj", "{AAE8E7DE-F98E-40FE-87F0-F1A97FB72E71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Join", "src\Lucene.Net.Join\Lucene.Net.Join.csproj", "{31562276-B6A8-4A9E-8324-31A2D1CB04AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Memory", "src\Lucene.Net.Memory\Lucene.Net.Memory.csproj", "{0E948685-B4BD-4143-B70D-85FE11E6E406}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Misc", "src\Lucene.Net.Misc\Lucene.Net.Misc.csproj", "{56B95CA9-CD38-433E-B0AC-0504EC61A479}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Queries", "src\Lucene.Net.Queries\Lucene.Net.Queries.csproj", "{B91B0E5E-AF3A-4373-934E-91AEE02C5FA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Sandbox", "src\Lucene.Net.Sandbox\Lucene.Net.Sandbox.csproj", "{46D088A4-5F56-4462-9E84-B482E2E1516F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Spatial", "src\Lucene.Net.Spatial\Lucene.Net.Spatial.csproj", "{62FFF347-AE79-447A-B77F-F3C33F957342}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Replicator", "src\Lucene.Net.Replicator\Lucene.Net.Replicator.csproj", "{41C809F8-85B0-47A1-B3B6-9735DD518846}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.Replicator.AspNetCore", "src\dotnet\Lucene.Net.Replicator.AspNetCore\Lucene.Net.Replicator.AspNetCore.csproj", "{EFB2E31A-5917-49D5-A808-FE5061A550B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.CodeAnalysis.CSharp", "src\dotnet\Lucene.Net.CodeAnalysis.CSharp\Lucene.Net.CodeAnalysis.CSharp.csproj", "{441876AF-F691-408C-85EC-6A934E60F627}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lucene.Net.CodeAnalysis.VisualBasic", "src\dotnet\Lucene.Net.CodeAnalysis.VisualBasic\Lucene.Net.CodeAnalysis.VisualBasic.csproj", "{5CD4D4E8-6132-4384-98FC-6AB1C97E0B80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lucene.Net.CodeAnalysis", "Lucene.Net.CodeAnalysis", "{E5E8C5DC-7048-4818-B884-FB2D037D2EF2}"
+	ProjectSection(SolutionItems) = preProject
+		src\dotnet\Lucene.Net.CodeAnalysis\Version.props = src\dotnet\Lucene.Net.CodeAnalysis\Version.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{4D0ED7D9-ABEE-4890-B06C-477E3A32B9A0}"
+	ProjectSection(SolutionItems) = preProject
+		src\dotnet\Lucene.Net.CodeAnalysis\tools\install.ps1 = src\dotnet\Lucene.Net.CodeAnalysis\tools\install.ps1
+		src\dotnet\Lucene.Net.CodeAnalysis\tools\uninstall.ps1 = src\dotnet\Lucene.Net.CodeAnalysis\tools\uninstall.ps1
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "websites", "websites\", "{8988CDA4-8420-4BEE-869A-66825055EED2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59352"
+		Debug.AspNetCompiler.PhysicalPath = "websites\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59352\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59352"
+		Release.AspNetCompiler.PhysicalPath = "websites\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59352\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59352"
+		SlnRelativePath = "websites\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A0AA37E-2B7B-4416-B528-DA4E0E6A6706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0AA37E-2B7B-4416-B528-DA4E0E6A6706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0AA37E-2B7B-4416-B528-DA4E0E6A6706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0AA37E-2B7B-4416-B528-DA4E0E6A6706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EC0EDA-81E9-4AEB-A09A-F956A9001743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EC0EDA-81E9-4AEB-A09A-F956A9001743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EC0EDA-81E9-4AEB-A09A-F956A9001743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EC0EDA-81E9-4AEB-A09A-F956A9001743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6952F1-5BC9-4389-A20A-E7BAE40D5597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6952F1-5BC9-4389-A20A-E7BAE40D5597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6952F1-5BC9-4389-A20A-E7BAE40D5597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6952F1-5BC9-4389-A20A-E7BAE40D5597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA889582-4ABA-4AFA-A125-D7A37B353B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA889582-4ABA-4AFA-A125-D7A37B353B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA889582-4ABA-4AFA-A125-D7A37B353B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA889582-4ABA-4AFA-A125-D7A37B353B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFBAB6D5-AE96-4364-A996-D31B0C55D4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFBAB6D5-AE96-4364-A996-D31B0C55D4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFBAB6D5-AE96-4364-A996-D31B0C55D4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFBAB6D5-AE96-4364-A996-D31B0C55D4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF862392-B2AF-422D-865E-768E969A9412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF862392-B2AF-422D-865E-768E969A9412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF862392-B2AF-422D-865E-768E969A9412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF862392-B2AF-422D-865E-768E969A9412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE8E7DE-F98E-40FE-87F0-F1A97FB72E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE8E7DE-F98E-40FE-87F0-F1A97FB72E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE8E7DE-F98E-40FE-87F0-F1A97FB72E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE8E7DE-F98E-40FE-87F0-F1A97FB72E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31562276-B6A8-4A9E-8324-31A2D1CB04AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31562276-B6A8-4A9E-8324-31A2D1CB04AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31562276-B6A8-4A9E-8324-31A2D1CB04AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31562276-B6A8-4A9E-8324-31A2D1CB04AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E948685-B4BD-4143-B70D-85FE11E6E406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E948685-B4BD-4143-B70D-85FE11E6E406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E948685-B4BD-4143-B70D-85FE11E6E406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E948685-B4BD-4143-B70D-85FE11E6E406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B95CA9-CD38-433E-B0AC-0504EC61A479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B95CA9-CD38-433E-B0AC-0504EC61A479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B95CA9-CD38-433E-B0AC-0504EC61A479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B95CA9-CD38-433E-B0AC-0504EC61A479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91B0E5E-AF3A-4373-934E-91AEE02C5FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91B0E5E-AF3A-4373-934E-91AEE02C5FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91B0E5E-AF3A-4373-934E-91AEE02C5FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91B0E5E-AF3A-4373-934E-91AEE02C5FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D088A4-5F56-4462-9E84-B482E2E1516F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D088A4-5F56-4462-9E84-B482E2E1516F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D088A4-5F56-4462-9E84-B482E2E1516F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D088A4-5F56-4462-9E84-B482E2E1516F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62FFF347-AE79-447A-B77F-F3C33F957342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62FFF347-AE79-447A-B77F-F3C33F957342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62FFF347-AE79-447A-B77F-F3C33F957342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62FFF347-AE79-447A-B77F-F3C33F957342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C809F8-85B0-47A1-B3B6-9735DD518846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C809F8-85B0-47A1-B3B6-9735DD518846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C809F8-85B0-47A1-B3B6-9735DD518846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C809F8-85B0-47A1-B3B6-9735DD518846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB2E31A-5917-49D5-A808-FE5061A550B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB2E31A-5917-49D5-A808-FE5061A550B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB2E31A-5917-49D5-A808-FE5061A550B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB2E31A-5917-49D5-A808-FE5061A550B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{441876AF-F691-408C-85EC-6A934E60F627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441876AF-F691-408C-85EC-6A934E60F627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441876AF-F691-408C-85EC-6A934E60F627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441876AF-F691-408C-85EC-6A934E60F627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD4D4E8-6132-4384-98FC-6AB1C97E0B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD4D4E8-6132-4384-98FC-6AB1C97E0B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD4D4E8-6132-4384-98FC-6AB1C97E0B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD4D4E8-6132-4384-98FC-6AB1C97E0B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8988CDA4-8420-4BEE-869A-66825055EED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8988CDA4-8420-4BEE-869A-66825055EED2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05CE3A39-40D4-452D-AFE0-E57E536A08C6} = {4016BDAB-6C33-4D1E-9439-57B416EA45D5}
+		{4BFE738F-3D99-4408-85D4-E882737F9CEC} = {4016BDAB-6C33-4D1E-9439-57B416EA45D5}
+		{DB6B3C48-B1B1-4977-9FB0-333ED71E84E1} = {4BFE738F-3D99-4408-85D4-E882737F9CEC}
+		{BC910C84-EF7C-4F69-AA76-47C0EC06D809} = {4BFE738F-3D99-4408-85D4-E882737F9CEC}
+		{4DF7EACE-2B25-43F6-B558-8520BF20BD76} = {8CA61D33-3590-4024-A304-7B1F75B50653}
+		{EFB2E31A-5917-49D5-A808-FE5061A550B4} = {8CA61D33-3590-4024-A304-7B1F75B50653}
+		{441876AF-F691-408C-85EC-6A934E60F627} = {8CA61D33-3590-4024-A304-7B1F75B50653}
+		{5CD4D4E8-6132-4384-98FC-6AB1C97E0B80} = {8CA61D33-3590-4024-A304-7B1F75B50653}
+		{E5E8C5DC-7048-4818-B884-FB2D037D2EF2} = {8CA61D33-3590-4024-A304-7B1F75B50653}
+		{4D0ED7D9-ABEE-4890-B06C-477E3A32B9A0} = {E5E8C5DC-7048-4818-B884-FB2D037D2EF2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F2179CC-CFD2-4419-AB74-D72856931F36}
+	EndGlobalSection
+EndGlobal
