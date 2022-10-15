@@ -28,7 +28,7 @@ jobs:
           # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
           sonarOrganization: nikcio
           # Optional. Set to 1 or true to not run 'dotnet test' command
-          # dotnetDisableTests: true
+          dotnetDisableTests: true
 
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
