@@ -29,8 +29,9 @@
     <!--<TargetFramework>net461</TargetFramework>-->
     <!--<TargetFramework>net48</TargetFramework>-->
     <!--<TargetFramework>netcoreapp3.1</TargetFramework>-->
-    <TargetFramework>net5.0</TargetFramework>
+    <!-- <TargetFramework>net5.0</TargetFramework> -->
     <!--<TargetFramework>net6.0</TargetFramework>-->
+    <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;net48;net462</TargetFrameworks>
 
     <!-- Allow the build script to pass in the test frameworks to build for.
       This overrides the above TargetFramework setting. 
